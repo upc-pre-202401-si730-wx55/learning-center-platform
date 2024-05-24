@@ -10,7 +10,7 @@ public class TutorialCommandService(ITutorialRepository tutorialRepository, IUni
 {
     public async Task<Tutorial?> Handle(CreateTutorialCommand command)
     {
-        var tutorial = new Tutorial(command.Title, command.Summary, command.CategoryId);
+        var tutorial = new Tutorial(command);
         try
         {
             await tutorialRepository.AddAsync(tutorial);
@@ -29,7 +29,7 @@ public class TutorialCommandService(ITutorialRepository tutorialRepository, IUni
         if (tutorial is null) throw new Exception("Tutorial not found");
         try
         {
-            // tutorial.AddVideo(command.VideoUrl());
+            tutorial.AddVideo(command.VideoUrl);
             await unitOfWork.CompleteAsync();
             return tutorial;
         }

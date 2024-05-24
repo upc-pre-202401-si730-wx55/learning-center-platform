@@ -11,7 +11,7 @@ public class CategoryCommandService(ICategoryRepository categoryRepository, IUni
     
     public async Task<Category?> Handle(CreateCategoryCommand command)
     {
-        var category = new Category(command.Name);
+        var category = new Category(command);
         try
         {
             await categoryRepository.AddAsync(category);

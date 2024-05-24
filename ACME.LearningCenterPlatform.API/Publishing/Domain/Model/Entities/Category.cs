@@ -1,3 +1,4 @@
+using ACME.LearningCenterPlatform.API.Publishing.Domain.Model.Commands;
 using ACME.LearningCenterPlatform.API.Shared.Infrastructure.Persistence.EFC.Configuration.Extensions;
 using Microsoft.VisualBasic;
 
@@ -8,6 +9,11 @@ public class Category
     public Category(string name)
     {
         Name = name;
+    }
+
+    public Category(CreateCategoryCommand command)
+    {
+        Name = command.Name;
     }
 
     public Category()
