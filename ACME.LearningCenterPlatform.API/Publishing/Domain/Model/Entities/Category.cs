@@ -1,3 +1,4 @@
+using ACME.LearningCenterPlatform.API.Publishing.Domain.Model.Aggregates;
 using ACME.LearningCenterPlatform.API.Publishing.Domain.Model.Commands;
 using ACME.LearningCenterPlatform.API.Shared.Infrastructure.Persistence.EFC.Configuration.Extensions;
 using Microsoft.VisualBasic;
@@ -24,5 +25,5 @@ public class Category
     public int Id { get; set; }
     public string Name { get; set; }
     
-    
+    public ICollection<Tutorial> Tutorials { get; }
 }

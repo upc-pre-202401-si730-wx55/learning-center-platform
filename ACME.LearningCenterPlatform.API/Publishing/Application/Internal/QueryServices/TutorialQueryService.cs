@@ -19,6 +19,6 @@ public class TutorialQueryService(ITutorialRepository tutorialRepository) : ITut
 
     public async Task<IEnumerable<Tutorial>> Handle(GetAllTutorialsByCategoryIdQuery query)
     {
-        return await tutorialRepository.FindByCategoryId(query.CategoryId);
+        return await tutorialRepository.FindByCategoryIdAsync(query.CategoryId);
     }
 }

@@ -5,5 +5,5 @@ namespace ACME.LearningCenterPlatform.API.Publishing.Domain.Repositories;
 
 public interface ITutorialRepository : IBaseRepository<Tutorial>
 {
-    Task<IEnumerable<Tutorial>> FindByCategoryId(int categoryId);
+    Task<IEnumerable<Tutorial>> FindByCategoryIdAsync(int categoryId);
 }
