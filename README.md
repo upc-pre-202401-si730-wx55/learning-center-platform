@@ -26,13 +26,13 @@ The Profiles Context is responsible for managing the profiles of the users. It i
 - Get a profile by id.
 - Get all profiles.
 
-This context includes also an anti-corruption layer to communicate with the Learning Context. The anti-corruption layer is responsible for managing the communication between the Profiles Context and the Learning Context. It offers the following capabilities to other bounded contexts:
+This context includes also an anti-corruption layer to communicate with the Publishing Context. The anti-corruption layer is responsible for managing the communication between the Profiles Context and the Publishing Context. It offers the following capabilities to other bounded contexts:
 - Create a new Profile, returning ID of the created Profile on success.
 - Get a Profile by Email, returning the associated Profile ID on success.
 
 ### Publishing Context
 
-The Learning Context is responsible for managing the publishing lifecycle of learning resources, like tutorials and their owned assets (reading content, images, videos). Its features include:
+The Publishing Context is responsible for managing the publishing lifecycle of learning resources, like tutorials and their owned assets (reading content, images, videos). Its features include:
 
 - Create a Category.
 - Get a Category by id.

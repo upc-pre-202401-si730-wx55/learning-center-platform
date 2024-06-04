@@ -1,7 +1,7 @@
 using ACME.LearningCenterPlatform.API.Profiles.Domain.Model.Aggregates;
 using ACME.LearningCenterPlatform.API.Profiles.Domain.Model.Queries;
 
-namespace ACME.LearningCenterPlatform.API.Profiles.Domain.Model.Services;
+namespace ACME.LearningCenterPlatform.API.Profiles.Domain.Services;
 
 public interface IProfileQueryService
 {

@@ -1,7 +1,7 @@
 using ACME.LearningCenterPlatform.API.Profiles.Application.Internal.CommandServices;
 using ACME.LearningCenterPlatform.API.Profiles.Application.Internal.QueryServices;
-using ACME.LearningCenterPlatform.API.Profiles.Domain.Model.Repositories;
-using ACME.LearningCenterPlatform.API.Profiles.Domain.Model.Services;
+using ACME.LearningCenterPlatform.API.Profiles.Domain.Repositories;
+using ACME.LearningCenterPlatform.API.Profiles.Domain.Services;
 using ACME.LearningCenterPlatform.API.Profiles.Infrastructure.Persistence.EFC.Repositories;
 using ACME.LearningCenterPlatform.API.Profiles.Interfaces.ACL;
 using ACME.LearningCenterPlatform.API.Profiles.Interfaces.ACL.Services;

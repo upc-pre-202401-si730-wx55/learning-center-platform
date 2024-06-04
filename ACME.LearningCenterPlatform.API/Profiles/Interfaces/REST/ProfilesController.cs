@@ -1,6 +1,6 @@
 using System.Net.Mime;
 using ACME.LearningCenterPlatform.API.Profiles.Domain.Model.Queries;
-using ACME.LearningCenterPlatform.API.Profiles.Domain.Model.Services;
+using ACME.LearningCenterPlatform.API.Profiles.Domain.Services;
 using ACME.LearningCenterPlatform.API.Profiles.Interfaces.REST.Resources;
 using ACME.LearningCenterPlatform.API.Profiles.Interfaces.REST.Transform;
 using Microsoft.AspNetCore.Mvc;
