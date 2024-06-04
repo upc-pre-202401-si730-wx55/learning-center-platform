@@ -32,7 +32,6 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="IAM\Application\Internal\CommandServices\" />
       <Folder Include="IAM\Application\Internal\QueryServices\" />
     </ItemGroup>
 
